@@ -88,6 +88,9 @@ def main():
     parser.add_argument('--epochs', type=int, default=1000, help='Number of epochs to train')
     args = parser.parse_args()
     
+    if (args.device in ['cpu', 'gpu']) and args.torch_compile_type == 'hpubackend':
+        raise ValueError("The device 'cpu' or 'gpu' and torch_compile_type 'hpubackend' are mutually exclusive.")
+
     device = torch.device(args.device)
     model = TrigModel().to(args.device)
     
