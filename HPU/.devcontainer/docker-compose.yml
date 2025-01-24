@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  torch-compile-toturial:
+    build:
+         context: .
+         dockerfile: Dockerfile.gaudi
+         args:
+          HTTP_PROXY: http://proxy1-jf.intel.com:911
+          HTTPS_PROXY: http://proxy1-jf.intel.com:912
+    environment:
+      - HABANA_VISIBLE_DEVICES=all
+      - OMPI_MCA_btl_vader_single_copy_mechanism=none
+    cap_add:
+      - SYS_NICE
+    network_mode: host
+    ports:
+      - "8000:8000"
+    volumes:
+      - ..:/workspaces:cached
+    command: /bin/sh -c "while sleep 1000; do :; done"
