@@ -11,6 +11,7 @@ from torchvision import datasets, transforms
 from torch.optim.lr_scheduler import StepLR
 from torch.fx.passes.graph_drawer import FxGraphDrawer
 from torch._decomp import core_aten_decompositions
+import habana_frameworks.torch.core as htcore
 import argparse
 
 torch._dynamo.reset()
@@ -78,11 +79,12 @@ class TrigModel(nn.Module):
 def main():
     
     # Set environment variables
+    os.environ['PT_HPU_LAZY_MODE'] = "0"
     os.environ["TORCH_COMPILE_DEBUG"] = "1"
     os.environ["TORCH_LOGS"] = "+inductor,dynamo"
     parser = argparse.ArgumentParser(description='Train a TrigModel with custom parameters.')
-    parser.add_argument('--torch_compile_type', type=str, choices=['inductor', 'atenIR', 'primsIR'], default='inductor', help='Backend type for torch compile.')
-    parser.add_argument('--device', type=str, default='cuda' if torch.cuda.is_available() else 'cpu', help='Device to run the training on')
+    parser.add_argument('--torch_compile_type', type=str, choices=['inductor', 'atenIR', 'primsIR', 'hpubackend'], default='inductor', help='Backend type for torch compile.')
+    parser.add_argument('--device', type=str, default='hpu', help='Device to run the training on')
     parser.add_argument('--epochs', type=int, default=1000, help='Number of epochs to train')
     args = parser.parse_args()
     
@@ -93,6 +95,7 @@ def main():
     # Define the backend mapping
     backend_mapping = {
         'inductor': 'inductor',
+        'hpubackend': "hpu_backend",
         'atenIR': lambda gm, sample_inputs: inspect_backend(gm, sample_inputs, decompositions),
         'primsIR': lambda gm, sample_inputs: inspect_backend(gm, sample_inputs, core_aten_decompositions())
     }
