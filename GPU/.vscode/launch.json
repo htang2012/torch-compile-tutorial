@@ -11,7 +11,15 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "args": [
-                "--torch_compile_type", "primsIR"
-            ]
-        },
+                
+            ],
+            "env": {
+                "PT_HPU_LAZY_MODE": "0",
+                //"TORCH_LOGS": "+dynamo,guards,bytecode"
+                "TORCH_COMPILE_DEBUG":"1"
+            }
+                   
+            
+        }
     ]
+}
