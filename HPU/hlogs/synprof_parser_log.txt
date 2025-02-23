@@ -1,0 +1,2 @@
+[01:37:42.214429][PARSER         ][info ][pid:7D6D][tid:7D6D] Habana Labs Synapse Profiler Parser - version 1.19.0.7abef0b
+[01:37:42.214448][PARSER         ][info ][pid:7D6D][tid:7D6D] Module compile date: Dec 17 2024, compile time: 00:37:57

@@ -1,0 +1,319 @@
+[01:37:39.270711][HCL_API   ][info ][tid:7D6D] hcclGetVersionString: pVersion=0x7fb5186bc360, len=32
+[01:37:39.270742][HCL_API   ][debug][tid:7D6D] HCCL Version String is: 1.19.0-e38fcf6
+[01:37:41.328827][HCL_API   ][info ][tid:7D6D] hcclInitDevice: 
+[01:37:41.328884][HCL       ][debug][tid:7D6D] hccl_context::init_device Started, m_deviceAcquired=false, apiId=0
+[01:37:41.328897][HCL       ][info ][tid:7D6D] Version:	1.19.0-e38fcf6
+[01:37:41.328951][HCL       ][debug][tid:7D6D] HclDeviceConfig::initHostName Setting m_hostname=sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6
+[01:37:41.329071][HCL       ][debug][tid:7D6D] HclDeviceConfigGaudiCommon::readHwType Started
+[01:37:41.329083][HCL       ][info ][tid:7D6D] HclDeviceConfigGaudiCommon::readHwType Received server type from driver: 5[HL_SERVER_GAUDI2_HLS2] (5)
+[01:37:41.329085][HCL       ][info ][tid:7D6D] HclDeviceConfigGaudiCommon::readHwType Received module ID from driver: 0
+[01:37:41.329087][HCL       ][debug][tid:7D6D] HclDeviceConfigGaudiCommon::readHwType m_sramBaseAddress=(0x1000fffffd000000)
+[01:37:41.329092][HCL       ][debug][tid:7D6D] HclDeviceConfigGaudiCommon::readHwType m_dramEnabled=true
+[01:37:41.329109][HCL       ][info ][tid:7D6D] HclDeviceConfigGaudiCommon::HclDeviceConfigGaudiCommon This rank is using device: /dev/accel/accel6 OAM: 0
+[01:37:41.329118][HCL       ][info ][tid:7D6D] No L3 Gaudi Net config file was found at /etc/gaudinet.json. Assuming L2 configuration
+[01:37:41.329126][HCL       ][info ][tid:7D6D] HclDeviceConfigGaudiCommon::determineHclType Received server type from driver: 5[HL_SERVER_GAUDI2_HLS2] (5)
+[01:37:41.329149][HCL       ][info ][tid:7D6D] HclDeviceConfigGaudiCommon::parseDeviceConfig HCL_TYPE from driver: HLS2
+[01:37:41.329170][HCL       ][info ][tid:7D6D] sched_getaffinity wasn't set. Not pinning threads...
+[01:37:41.329173][HCL       ][info ][tid:7D6D] creating device. type = synDeviceGaudi2 null-submission false
+[01:37:41.329182][HCL       ][debug][tid:7D6D] initDevice: Creating server based on configType=7[HLS2], deviceType=4[synDeviceGaudi2]
+[01:37:41.329203][HCL       ][debug][tid:7D6D] Gen2ArchServerDef::Gen2ArchServerDef ctor, fd=24, moduleId=0, defaultBoxSize=8, defaultScaleupGroupSize=8, isUnitTest=false
+[01:37:41.329218][HCL       ][debug][tid:7D6D] HLS2ServerDef::HLS2ServerDef ctor, fd=24, moduleId=0, isUnitTest=false
+[01:37:41.332128][HCL_IBV   ][info ][tid:7D6D] loaded: /opt/habanalabs/rdma-core/src/build/lib/libhbl.so
+[01:37:41.332138][HCL_IBV   ][info ][tid:7D6D] loaded: /opt/habanalabs/rdma-core/src/build/lib/libibverbshl.so.1
+[01:37:41.337032][HCL       ][debug][tid:7D6D] HLS2ServerDef::init Started
+[01:37:41.337050][HCL       ][debug][tid:7D6D] Gen2ArchServerConnectivity::Gen2ArchServerConnectivity ctor, fd=24, moduleId=0, useDummyConnectivity=false
+[01:37:41.337057][HCL       ][debug][tid:7D6D] HLS2ServerConnectivity::init Started, m_moduleId=0, m_fd=24, readLkdPortsMask=true
+[01:37:41.337060][HCL       ][debug][tid:7D6D] HLS2ServerConnectivity::init m_userScaleOutPortsMask=110000000000000100000000
+[01:37:41.337061][HCL       ][debug][tid:7D6D] HLS2ServerConnectivity::init m_enabled_ports_mask=111111111111111111111111, m_lkd_enabled_scaleout_ports=110000000000000100000000, m_max_scaleout_ports=3
+[01:37:41.337064][HCL       ][debug][tid:7D6D] ServerConnectivityUserConfig::parseConfig JSON Config File path is empty. Using default settings
+[01:37:41.337067][HCL       ][debug][tid:7D6D] HLS2ServerConnectivity::createRuntimeConnectivityFactory Started, hclCommId=0
+[01:37:41.337086][HCL       ][debug][tid:7D6D] Gen2ArchRuntimeConnectivity::Gen2ArchRuntimeConnectivity m_moduleId=0, hclCommId=0
+[01:37:41.337087][HCL       ][debug][tid:7D6D] HLS2RuntimeConnectivity::HLS2RuntimeConnectivity ctor called, hclCommId=0
+[01:37:41.337090][HCL       ][debug][tid:7D6D] HLS2RuntimeConnectivity::init Started, m_hclCommId=0, readLkdPortsMask=true
+[01:37:41.337091][HCL       ][debug][tid:7D6D] HLS2RuntimeConnectivity::assignDefaultMapping Assign m_hclCommId=0, moduleId=0
+[01:37:41.337092][HCL       ][debug][tid:7D6D] HLS2RuntimeConnectivity::assignDefaultMapping Assign m_hclCommId=0, moduleId=1
+[01:37:41.337093][HCL       ][debug][tid:7D6D] HLS2RuntimeConnectivity::assignDefaultMapping Assign m_hclCommId=0, moduleId=2
+[01:37:41.337096][HCL       ][debug][tid:7D6D] HLS2RuntimeConnectivity::assignDefaultMapping Assign m_hclCommId=0, moduleId=3
+[01:37:41.337096][HCL       ][debug][tid:7D6D] HLS2RuntimeConnectivity::assignDefaultMapping Assign m_hclCommId=0, moduleId=4
+[01:37:41.337097][HCL       ][debug][tid:7D6D] HLS2RuntimeConnectivity::assignDefaultMapping Assign m_hclCommId=0, moduleId=5
+[01:37:41.337097][HCL       ][debug][tid:7D6D] HLS2RuntimeConnectivity::assignDefaultMapping Assign m_hclCommId=0, moduleId=6
+[01:37:41.337098][HCL       ][debug][tid:7D6D] HLS2RuntimeConnectivity::assignDefaultMapping Assign m_hclCommId=0, moduleId=7
+[01:37:41.337112][HCL       ][info ][tid:7D6D] HLS2RuntimeConnectivity::readAllPorts Default configuration of ports for comm 0 mask is: scaleout=bits(8, 22, 23), all=bits(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23)
+[01:37:41.337114][HCL       ][debug][tid:7D6D] Started, m_hclCommId=0, scaleOutPortsMask=110000000000000100000000
+[01:37:41.337119][HCL       ][debug][tid:7D6D] maxScaleoutPorts=3, allScaleoutNicsBits=bits(0, 1, 2), logicalScaleoutPortsMaskBits=bits(0, 1, 2)
+[01:37:41.337122][HCL       ][info ][tid:7D6D] m_hclCommId=0, initialized full ports mask bits(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23) external ports mask bits(8, 22, 23), user requested external ports mask 110000000000000100000000
+[01:37:41.337128][HCL       ][info ][tid:7D6D] HLS2RuntimeConnectivity::setNumScaleOutPortsGlbl Enabled number of scaleout ports for comm 0 by LKD/user mask is: bits(8, 22, 23) out of bits(8, 22, 23) possible.
+[01:37:41.337131][HCL       ][debug][tid:7D6D] HLS2RuntimeConnectivity::setNumScaleOutPortsGlbl m_enabled_scaleout_sub_ports for comm 0: [23, 2]
+[01:37:41.337131][HCL       ][debug][tid:7D6D] HLS2RuntimeConnectivity::setNumScaleOutPortsGlbl m_enabled_scaleout_sub_ports for comm 0: [22, 1]
+[01:37:41.337131][HCL       ][debug][tid:7D6D] HLS2RuntimeConnectivity::setNumScaleOutPortsGlbl m_enabled_scaleout_sub_ports for comm 0: [8, 0]
+[01:37:41.337133][HCL       ][debug][tid:7D6D] HLS2RuntimeConnectivity::setMaxSubNics m_hclCommId=0, m_maxSubNicScaleup=2, m_maxSubNicScaleout=2
+[01:37:41.337135][HCL       ][debug][tid:7D6D] HLS2RuntimeConnectivity::initServerSpecifics m_hclCommId=0
+[01:37:41.337387][HCL       ][debug][tid:7D6D] IHclDevice::IHclDevice ctor, m_deviceAcquired=true, deviceType=synDeviceGaudi2
+[01:37:41.339906][HCL       ][info ][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] Found 3 habana interfaces
+[01:37:41.665752][HCL       ][info ][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::setScaleoutMode gaudi nics selected
+[01:37:41.665835][HCL       ][info ][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] IntermediateBufferContainerGaudiCommon::init Allocated device memory. Address: 0x1001600166000000, Size: 120MB
+[01:37:41.665840][HCL       ][info ][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] IntermediateBufferContainerGaudiCommon::init Allocated device memory. Address: 0x100160016d800000, Size: 168MB
+[01:37:41.665968][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceConfigGaudiCommon::updateDisabledPorts disabledPortsMaskFromLkd=1111111111111111111111111111111111111111000000000000000000000000, forcedLoopBackScaleoutDisabledPortsMask=000000000000000000000000
+[01:37:41.665990][HCL       ][info ][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::readMacInfoFromFile Loading Mac Addr info file at /etc/habanalabs/macAddrInfo.json.
+[01:37:41.666142][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nics mask = bits(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23)
+[01:37:41.666144][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[0]=0xffffffffffff
+[01:37:41.666145][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[1]=0xffffffffffff
+[01:37:41.666145][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[2]=0xffffffffffff
+[01:37:41.666146][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[3]=0xffffffffffff
+[01:37:41.666146][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[4]=0xffffffffffff
+[01:37:41.666146][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[5]=0xffffffffffff
+[01:37:41.666147][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[6]=0xffffffffffff
+[01:37:41.666147][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[7]=0xffffffffffff
+[01:37:41.666148][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[8]=0xb0fd0bd71d99
+[01:37:41.666148][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[9]=0xffffffffffff
+[01:37:41.666148][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[10]=0xffffffffffff
+[01:37:41.666149][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[11]=0xffffffffffff
+[01:37:41.666149][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[12]=0xffffffffffff
+[01:37:41.666150][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[13]=0xffffffffffff
+[01:37:41.666150][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[14]=0xffffffffffff
+[01:37:41.666150][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[15]=0xffffffffffff
+[01:37:41.666151][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[16]=0xffffffffffff
+[01:37:41.666151][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[17]=0xffffffffffff
+[01:37:41.666152][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[18]=0xffffffffffff
+[01:37:41.666152][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[19]=0xffffffffffff
+[01:37:41.666152][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[20]=0xffffffffffff
+[01:37:41.666153][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[21]=0xffffffffffff
+[01:37:41.666153][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[22]=0xb0fd0bd71da7
+[01:37:41.666154][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::getMacInfo nic[23]=0xb0fd0bd71da8
+[01:37:41.666157][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] HclDeviceGaudi2::initNicsMask disabled ports=1111111111111111111111111111111111111111000000000000000000000000 m_nicsStatusMask=111111111111111111111111
+[01:37:41.894375][HCL       ][info ][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] Gen2ArchScaleoutProvider::Gen2ArchScaleoutProvider Scale-Out provider - gaudi
+[01:37:42.012948][HCL_SCAL  ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] hcl::Gaudi2ScalManager::initGlobalContext HCL initializes ScalManager Global Context...
+[01:37:42.013003][HCL_SCAL  ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] hcl::Gaudi2ScalWrapper::waitOnCg wait On CG for target: 1
+[01:37:42.013011][HCL_SCAL  ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] hcl::Gaudi2ScalManager::initGlobalContext HCL initialized ScalManager Global Context
+[01:37:42.013014][HCL       ][debug][tid:7D6D][C:host[sc09wynn07-hls251508dcb-3a35-4362-9cf1-e02c660c28d6] device[0]] hccl_gaudi2_t::init_device G2 device created
+[01:37:54.283615][HCL_API   ][info ][tid:7D6D] hcclDestroyDevice: 
+[01:37:54.283645][HCL       ][debug][tid:7D6D] hccl_context::destroy_device Started, m_deviceAcquired=true
+[01:37:54.283649][HCL       ][debug][tid:7D6D] destroyDevice: Called
+[01:37:54.359215][HCL       ][debug][tid:7D6D] HLS2ServerDef::destroy dtor, m_fd=24, m_moduleId=0, m_isUnitTest=false
+[01:37:54.408515][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals Started
+[01:37:54.408530][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, longSoIndex=0x580
+[01:37:54.408535][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, longSoAddr=0x1000007ffc701600
+[01:37:54.408570][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, longSoRegIndex=3, longSoRegValue=0x0, longSoValue=0x0
+[01:37:54.408573][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, longSoRegIndex=2, longSoRegValue=0x0, longSoValue=0x0
+[01:37:54.408574][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, longSoRegIndex=1, longSoRegValue=0x0, longSoValue=0x0
+[01:37:54.408576][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, longSoRegIndex=0, longSoRegValue=0x0, longSoValue=0x0
+[01:37:54.408581][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, cgAddr=0x1000007ffc300000, cgSize=64
+[01:37:54.409139][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300000, content=0x1
+[01:37:54.409140][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300001, content=0x0
+[01:37:54.409140][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300002, content=0x0
+[01:37:54.409141][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300003, content=0x0
+[01:37:54.409141][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300004, content=0x0
+[01:37:54.409142][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300005, content=0x0
+[01:37:54.409142][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300006, content=0x0
+[01:37:54.409142][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300007, content=0x0
+[01:37:54.409143][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300008, content=0x0
+[01:37:54.409143][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300009, content=0x0
+[01:37:54.409144][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30000a, content=0x0
+[01:37:54.409144][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30000b, content=0x0
+[01:37:54.409144][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30000c, content=0x0
+[01:37:54.409145][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30000d, content=0x0
+[01:37:54.409145][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30000e, content=0x0
+[01:37:54.409146][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30000f, content=0x0
+[01:37:54.409146][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300010, content=0x0
+[01:37:54.409146][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300011, content=0x0
+[01:37:54.409147][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300012, content=0x0
+[01:37:54.409147][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300013, content=0x0
+[01:37:54.409148][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300014, content=0x0
+[01:37:54.409148][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300015, content=0x0
+[01:37:54.409150][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300016, content=0x0
+[01:37:54.409150][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300017, content=0x0
+[01:37:54.409150][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300018, content=0x0
+[01:37:54.409151][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300019, content=0x0
+[01:37:54.409151][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30001a, content=0x0
+[01:37:54.409152][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30001b, content=0x0
+[01:37:54.409152][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30001c, content=0x0
+[01:37:54.409152][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30001d, content=0x0
+[01:37:54.409153][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30001e, content=0x0
+[01:37:54.409153][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30001f, content=0x0
+[01:37:54.409154][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300020, content=0x0
+[01:37:54.409154][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300021, content=0x0
+[01:37:54.409155][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300022, content=0x0
+[01:37:54.409155][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300023, content=0x0
+[01:37:54.409155][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300024, content=0x0
+[01:37:54.409156][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300025, content=0x0
+[01:37:54.409156][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300026, content=0x0
+[01:37:54.409157][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300027, content=0x0
+[01:37:54.409157][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300028, content=0x0
+[01:37:54.409157][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300029, content=0x0
+[01:37:54.409158][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30002a, content=0x0
+[01:37:54.409158][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30002b, content=0x0
+[01:37:54.409159][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30002c, content=0x0
+[01:37:54.409159][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30002d, content=0x0
+[01:37:54.409159][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30002e, content=0x0
+[01:37:54.409160][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30002f, content=0x0
+[01:37:54.409160][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300030, content=0x0
+[01:37:54.409161][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300031, content=0x0
+[01:37:54.409161][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300032, content=0x0
+[01:37:54.409161][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300033, content=0x0
+[01:37:54.409162][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300034, content=0x0
+[01:37:54.409162][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300035, content=0x0
+[01:37:54.409163][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300036, content=0x0
+[01:37:54.409164][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300037, content=0x0
+[01:37:54.409164][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300038, content=0x0
+[01:37:54.409165][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc300039, content=0x0
+[01:37:54.409165][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30003a, content=0x0
+[01:37:54.409166][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30003b, content=0x0
+[01:37:54.409166][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30003c, content=0x0
+[01:37:54.409166][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30003d, content=0x0
+[01:37:54.409167][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30003e, content=0x0
+[01:37:54.409167][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, addr=0x1000007ffc30003f, content=0x0
+[01:37:54.409172][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=0, failedCheckSignals=false
+[01:37:54.409172][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, longSoIndex=0x588
+[01:37:54.409173][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, longSoAddr=0x1000007ffc701620
+[01:37:54.409181][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, longSoRegIndex=3, longSoRegValue=0x0, longSoValue=0x0
+[01:37:54.409182][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, longSoRegIndex=2, longSoRegValue=0x0, longSoValue=0x0
+[01:37:54.409182][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, longSoRegIndex=1, longSoRegValue=0x0, longSoValue=0x0
+[01:37:54.409183][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, longSoRegIndex=0, longSoRegValue=0x0, longSoValue=0x0
+[01:37:54.409183][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, cgAddr=0x1000007ffc300600, cgSize=64
+[01:37:54.409210][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300600, content=0x1
+[01:37:54.409211][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300601, content=0x0
+[01:37:54.409211][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300602, content=0x0
+[01:37:54.409212][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300603, content=0x0
+[01:37:54.409212][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300604, content=0x0
+[01:37:54.409212][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300605, content=0x0
+[01:37:54.409213][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300606, content=0x0
+[01:37:54.409213][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300607, content=0x0
+[01:37:54.409214][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300608, content=0x0
+[01:37:54.409214][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300609, content=0x0
+[01:37:54.409214][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30060a, content=0x0
+[01:37:54.409215][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30060b, content=0x0
+[01:37:54.409215][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30060c, content=0x0
+[01:37:54.409216][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30060d, content=0x0
+[01:37:54.409217][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30060e, content=0x0
+[01:37:54.409217][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30060f, content=0x0
+[01:37:54.409218][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300610, content=0x0
+[01:37:54.409218][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300611, content=0x0
+[01:37:54.409219][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300612, content=0x0
+[01:37:54.409219][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300613, content=0x0
+[01:37:54.409219][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300614, content=0x0
+[01:37:54.409220][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300615, content=0x0
+[01:37:54.409220][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300616, content=0x0
+[01:37:54.409221][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300617, content=0x0
+[01:37:54.409221][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300618, content=0x0
+[01:37:54.409221][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300619, content=0x0
+[01:37:54.409222][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30061a, content=0x0
+[01:37:54.409222][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30061b, content=0x0
+[01:37:54.409223][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30061c, content=0x0
+[01:37:54.409223][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30061d, content=0x0
+[01:37:54.409224][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30061e, content=0x0
+[01:37:54.409224][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30061f, content=0x0
+[01:37:54.409224][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300620, content=0x0
+[01:37:54.409225][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300621, content=0x0
+[01:37:54.409225][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300622, content=0x0
+[01:37:54.409226][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300623, content=0x0
+[01:37:54.409226][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300624, content=0x0
+[01:37:54.409226][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300625, content=0x0
+[01:37:54.409227][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300626, content=0x0
+[01:37:54.409227][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300627, content=0x0
+[01:37:54.409228][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300628, content=0x0
+[01:37:54.409228][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300629, content=0x0
+[01:37:54.409228][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30062a, content=0x0
+[01:37:54.409229][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30062b, content=0x0
+[01:37:54.409229][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30062c, content=0x0
+[01:37:54.409230][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30062d, content=0x0
+[01:37:54.409231][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30062e, content=0x0
+[01:37:54.409231][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30062f, content=0x0
+[01:37:54.409232][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300630, content=0x0
+[01:37:54.409232][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300631, content=0x0
+[01:37:54.409233][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300632, content=0x0
+[01:37:54.409233][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300633, content=0x0
+[01:37:54.409233][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300634, content=0x0
+[01:37:54.409234][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300635, content=0x0
+[01:37:54.409234][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300636, content=0x0
+[01:37:54.409235][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300637, content=0x0
+[01:37:54.409235][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300638, content=0x0
+[01:37:54.409235][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc300639, content=0x0
+[01:37:54.409236][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30063a, content=0x0
+[01:37:54.409236][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30063b, content=0x0
+[01:37:54.409237][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30063c, content=0x0
+[01:37:54.409237][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30063d, content=0x0
+[01:37:54.409237][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30063e, content=0x0
+[01:37:54.409238][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, addr=0x1000007ffc30063f, content=0x0
+[01:37:54.409238][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=1, failedCheckSignals=false
+[01:37:54.409239][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, longSoIndex=0x590
+[01:37:54.409239][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, longSoAddr=0x1000007ffc701640
+[01:37:54.409247][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, longSoRegIndex=3, longSoRegValue=0x0, longSoValue=0x0
+[01:37:54.409247][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, longSoRegIndex=2, longSoRegValue=0x0, longSoValue=0x0
+[01:37:54.409248][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, longSoRegIndex=1, longSoRegValue=0x0, longSoValue=0x0
+[01:37:54.409248][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, longSoRegIndex=0, longSoRegValue=0x0, longSoValue=0x0
+[01:37:54.409249][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, cgAddr=0x1000007ffc300c00, cgSize=64
+[01:37:54.409276][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c00, content=0x1
+[01:37:54.409276][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c01, content=0x0
+[01:37:54.409276][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c02, content=0x0
+[01:37:54.409277][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c03, content=0x0
+[01:37:54.409277][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c04, content=0x0
+[01:37:54.409278][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c05, content=0x0
+[01:37:54.409279][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c06, content=0x0
+[01:37:54.409279][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c07, content=0x0
+[01:37:54.409280][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c08, content=0x0
+[01:37:54.409280][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c09, content=0x0
+[01:37:54.409281][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c0a, content=0x0
+[01:37:54.409281][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c0b, content=0x0
+[01:37:54.409282][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c0c, content=0x0
+[01:37:54.409282][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c0d, content=0x0
+[01:37:54.409283][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c0e, content=0x0
+[01:37:54.409283][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c0f, content=0x0
+[01:37:54.409283][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c10, content=0x0
+[01:37:54.409284][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c11, content=0x0
+[01:37:54.409284][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c12, content=0x0
+[01:37:54.409285][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c13, content=0x0
+[01:37:54.409285][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c14, content=0x0
+[01:37:54.409285][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c15, content=0x0
+[01:37:54.409286][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c16, content=0x0
+[01:37:54.409286][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c17, content=0x0
+[01:37:54.409287][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c18, content=0x0
+[01:37:54.409287][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c19, content=0x0
+[01:37:54.409288][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c1a, content=0x0
+[01:37:54.409288][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c1b, content=0x0
+[01:37:54.409288][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c1c, content=0x0
+[01:37:54.409289][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c1d, content=0x0
+[01:37:54.409289][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c1e, content=0x0
+[01:37:54.409290][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c1f, content=0x0
+[01:37:54.409290][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c20, content=0x0
+[01:37:54.409290][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c21, content=0x0
+[01:37:54.409291][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c22, content=0x0
+[01:37:54.409291][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c23, content=0x0
+[01:37:54.409292][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c24, content=0x0
+[01:37:54.409292][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c25, content=0x0
+[01:37:54.409292][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c26, content=0x0
+[01:37:54.409294][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c27, content=0x0
+[01:37:54.409294][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c28, content=0x0
+[01:37:54.409295][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c29, content=0x0
+[01:37:54.409295][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c2a, content=0x0
+[01:37:54.409296][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c2b, content=0x0
+[01:37:54.409296][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c2c, content=0x0
+[01:37:54.409297][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c2d, content=0x0
+[01:37:54.409297][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c2e, content=0x0
+[01:37:54.409297][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c2f, content=0x0
+[01:37:54.409298][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c30, content=0x0
+[01:37:54.409298][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c31, content=0x0
+[01:37:54.409299][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c32, content=0x0
+[01:37:54.409299][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c33, content=0x0
+[01:37:54.409300][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c34, content=0x0
+[01:37:54.409300][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c35, content=0x0
+[01:37:54.409300][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c36, content=0x0
+[01:37:54.409301][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c37, content=0x0
+[01:37:54.409301][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c38, content=0x0
+[01:37:54.409302][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c39, content=0x0
+[01:37:54.409302][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c3a, content=0x0
+[01:37:54.409302][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c3b, content=0x0
+[01:37:54.409303][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c3c, content=0x0
+[01:37:54.409303][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c3d, content=0x0
+[01:37:54.409304][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c3e, content=0x0
+[01:37:54.409304][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, addr=0x1000007ffc300c3f, content=0x0
+[01:37:54.409304][HCL       ][debug][tid:7D6D] HclDeviceGaudi2::checkSignals archIndex=2, failedCheckSignals=false
+[01:37:54.409362][HCL       ][info ][tid:7D6D] ----------------- interface counters (for 3 interfaces) -------------
+[01:37:54.517725][HCL       ][info ][tid:7D6D] ------------------------------------------------------------------------------------------------------
+[01:37:54.517728][HCL       ][info ][tid:7D6D]      if         :             name                 :    val start    :     val now     :      diff      
+[01:37:54.517728][HCL       ][info ][tid:7D6D] ------------------------------------------------------------------------------------------------------
+[01:37:54.625775][HCL       ][info ][tid:7D6D] ------------------------------------------------------------------------------------------------------
+[01:37:54.625783][HCL       ][info ][tid:7D6D]      if         :             name                 :    val start    :     val now     :      diff      
+[01:37:54.625786][HCL       ][info ][tid:7D6D] ------------------------------------------------------------------------------------------------------
+[01:37:54.733729][HCL       ][info ][tid:7D6D] ------------------------------------------------------------------------------------------------------
+[01:37:54.733733][HCL       ][info ][tid:7D6D]      if         :             name                 :    val start    :     val now     :      diff      
+[01:37:54.733734][HCL       ][info ][tid:7D6D] ------------------------------------------------------------------------------------------------------

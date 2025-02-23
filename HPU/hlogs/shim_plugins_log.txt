@@ -1,0 +1,2 @@
+[01:37:42.213206][HW_TRACE         ][debug][pid:7D6D][tid:7D6D] Initiating Gaudi2 profiling session
+[01:37:42.225980][PROF_hl0         ][info ][pid:7D6D][tid:7D6D] Trace buffer location configured to be host

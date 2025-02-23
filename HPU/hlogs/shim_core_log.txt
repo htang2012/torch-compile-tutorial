@@ -1,0 +1,31 @@
+[01:37:39.267906][SHIM_CORE][info ][pid:8021][tid:8021] File opened /tmp/profile_template_15oPgt.json
+[01:37:39.267948][SHIM_CORE][info ][pid:8021][tid:8021] File closed /tmp/profile_template_15oPgt.json
+[01:37:39.239702][SHIM_CORE][debug][pid:7D6D][tid:7D6D] Create mem fd 18 with size 45056 (valid 45056) created successfully
+[01:37:39.239741][SHIM_CORE][debug][pid:7D6D][tid:7D6D] Deserialize string successfully
+[01:37:39.270300][SHIM_CORE][info ][pid:7D6D][tid:7D6D] Setting shim configuration from template profile_api_light
+[01:37:39.270341][SHIM_CORE][debug][pid:7D6D][tid:7D6D] Deserialize string successfully
+[01:37:39.270413][SHIM_CORE][debug][pid:7D6D][tid:7D6D] GetStringFromPluginInfo new string from plugin: HostProfiler;libhost_profiler.so;true;HostProfiler_Load;HostProfiler_Unload;HostProfiler_GetSchemeNames;HostProfiler_SetSchemeValues;;40960;119;
+[01:37:39.270418][SHIM_CORE][debug][pid:7D6D][tid:7D6D] Write HostProfiler;libhost_profiler.so;true;HostProfiler_Load;HostProfiler_Unload;HostProfiler_GetSchemeNames;HostProfiler_SetSchemeValues;;40960;119; to shared memory in offest 8192 
+[01:37:39.270420][SHIM_CORE][debug][pid:7D6D][tid:7D6D] GetStringFromPluginInfo new string from plugin: HwTrace;libhw_trace.so;true;HwTrace_Load;HwTrace_Unload;HwTrace_GetSchemeNames;HwTrace_SetSchemeValues;;45056;340;
+[01:37:39.270421][SHIM_CORE][debug][pid:7D6D][tid:7D6D] Write HwTrace;libhw_trace.so;true;HwTrace_Load;HwTrace_Unload;HwTrace_GetSchemeNames;HwTrace_SetSchemeValues;;45056;340; to shared memory in offest 9216 
+[01:37:39.319456][SHIM_CORE][debug][pid:7D6D][tid:7D6D] API SYNAPSE mask changed from 0 to 1
+[01:37:39.319459][SHIM_CORE][debug][pid:7D6D][tid:7D6D] getFunctions Load default plugin
+[01:37:39.319479][SHIM_CORE][debug][pid:7D6D][tid:7D6D] GetPluginInfoFromString parse successfully pluginName: HostProfiler libName: libhost_profiler.so enable = true
+[01:37:39.319490][SHIM_CORE][debug][pid:7D6D][tid:7D6D] GetPluginInfoFromString parse successfully pluginName: HwTrace libName: libhw_trace.so enable = true
+[01:37:39.325850][SHIM_CORE][debug][pid:7D6D][tid:7D6D] plugin HostProfiler was loaded successfully from libhost_profiler.so
+[01:37:39.325931][SHIM_CORE][debug][pid:7D6D][tid:7D6D] plugin HostProfiler was Initialized successfully for API SYNAPSE
+[01:37:39.553372][SHIM_CORE][debug][pid:7D6D][tid:7D6D] plugin HwTrace was loaded successfully from libhw_trace.so
+[01:37:39.553533][SHIM_CORE][debug][pid:7D6D][tid:7D6D] plugin HwTrace was Initialized successfully for API SYNAPSE
+[01:37:39.606370][SHIM_CORE][debug][pid:7D6D][tid:7D6D] API HLTHUNK mask changed from 0 to 1
+[01:37:39.606373][SHIM_CORE][debug][pid:7D6D][tid:7D6D] getFunctions Load default plugin
+[01:37:39.606393][SHIM_CORE][debug][pid:7D6D][tid:7D6D] GetPluginInfoFromString parse successfully pluginName: HostProfiler libName: libhost_profiler.so enable = true
+[01:37:39.606401][SHIM_CORE][debug][pid:7D6D][tid:7D6D] GetPluginInfoFromString parse successfully pluginName: HwTrace libName: libhw_trace.so enable = true
+[01:37:39.606418][SHIM_CORE][debug][pid:7D6D][tid:7D6D] plugin HostProfiler was Initialized successfully for API HLTHUNK
+[01:37:39.606427][SHIM_CORE][debug][pid:7D6D][tid:7D6D] plugin HwTrace was Initialized successfully for API HLTHUNK
+[01:37:39.613363][SHIM_CORE][debug][pid:7D6D][tid:7D6D] API SCAL mask changed from 0 to 1
+[01:37:39.613365][SHIM_CORE][debug][pid:7D6D][tid:7D6D] getFunctions Load default plugin
+[01:37:39.613379][SHIM_CORE][debug][pid:7D6D][tid:7D6D] GetPluginInfoFromString parse successfully pluginName: HostProfiler libName: libhost_profiler.so enable = true
+[01:37:39.613386][SHIM_CORE][debug][pid:7D6D][tid:7D6D] GetPluginInfoFromString parse successfully pluginName: HwTrace libName: libhw_trace.so enable = true
+[01:37:39.613394][SHIM_CORE][debug][pid:7D6D][tid:7D6D] Plugin HostProfiler is not supported for API SCAL
+[01:37:39.613395][SHIM_CORE][debug][pid:7D6D][tid:7D6D] Plugin HwTrace is not supported for API SCAL
+[01:37:55.587606][SHIM_CORE][debug][pid:7D6D][tid:7D6D] archive ./default_profiling_32109.hltv closed
