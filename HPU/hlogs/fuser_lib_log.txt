@@ -1,0 +1,218 @@
+[2025-02-23 01:37:42.863] [FUSER_LIB] [info] Habana Labs TPC-Fuser - version 1.19.0.d4be6cbd2dd325a493ee7393d2e01157c81125e9
+[2025-02-23 01:37:42.863] [FUSER_LIB] [error] TPC C/C++ compiler - version 2.7.33.2a3c8d109fa165ffe734b973d705f71271fffb39 (/opt/habanalabs/bin/tpc-clang)
+[2025-02-23 01:37:42.979] [FUSER_LIB] [debug] graph pattern: fused_kernel_0xEF6F0ACF add_fwd_f32(mult_fwd_f32(sin_fwd_f32(add_f32(t,t)),t),cos_fwd_f32(add_f32(t,t)))
+[2025-02-23 01:37:42.979] [FUSER_LIB] [debug] fused_kernel_0xEF6F0ACF (guid histogram): addmm_f32(2), binary_with_alpha_fwd_f32(1), cos_fwd_f32(1), mult_fwd_f32(1), sin_fwd_f32(1), 
+[2025-02-23 01:37:42.979] [FUSER_LIB] [debug] insufficient ELF buffer, given 0 required16148
+[2025-02-23 01:37:42.979] [FUSER_LIB] [debug] ELF size 16148
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug] HabanaKernelParams: {
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   guid: fused_kernel_0xEF6F0ACF_1_f32, device: 3, version: 1, params: N/A, debug_flags: 0x00000000,
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   input_tensors: [
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { shape: 1xf32, permutation: [0], quantization: (1, 0), flags: [reducible], layout: [0], buffer: null },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { shape: 1xf32, permutation: [0], quantization: (1, 0), flags: [reducible], layout: [0], buffer: null },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null }
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   ],
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   output_tensors: [
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null }
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   ]
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug] }
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug] HabanaKernelInstantiation: {
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   index_space: [4, 2],
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   input_tensors: {
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]       flags: [fully_accessed_once] },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { dim = 0,	a = 0,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]       flags: [fully_accessed_once] },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { dim = 0,	a = 0,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]       flags: [fully_accessed_once] },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]       flags: [fully_accessed_once] }
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   output_tensors: {
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]  },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]  },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]  }
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   elf: { buffer: 0x000055d8e5340000, size: 16148 }
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug] }
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug] insufficient ELF buffer, given 0 required16148
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug] ELF size 16148
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug] HabanaKernelParams: {
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   guid: fused_kernel_0xEF6F0ACF_1_f32, device: 3, version: 1, params: N/A, debug_flags: 0x00000000,
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   input_tensors: [
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { shape: 1xf32, permutation: [0], quantization: (1, 0), flags: [reducible], layout: [0], buffer: null },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { shape: 1xf32, permutation: [0], quantization: (1, 0), flags: [reducible], layout: [0], buffer: null },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null }
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   ],
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   output_tensors: [
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null }
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   ]
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug] }
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug] HabanaKernelInstantiation: {
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   index_space: [4, 2],
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   input_tensors: {
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]       flags: [fully_accessed_once] },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { dim = 0,	a = 0,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]       flags: [fully_accessed_once] },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { dim = 0,	a = 0,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]       flags: [fully_accessed_once] },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]       flags: [fully_accessed_once] }
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   output_tensors: {
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]  },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]  },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]  }
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   },
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug]   elf: { buffer: 0x000055d8e5340000, size: 16148 }
+[2025-02-23 01:37:42.980] [FUSER_LIB] [debug] }
+[2025-02-23 01:37:43.121] [FUSER_LIB] [debug] graph pattern: fused_kernel_0x3BC6BF3C mult_fwd_f32(mult_fwd_f32(t,t),cos_fwd_f32(t))
+[2025-02-23 01:37:43.121] [FUSER_LIB] [debug] mult_fwd_f32(mult_fwd_f32(t,t),cos_fwd_f32(t))
+[2025-02-23 01:37:43.121] [FUSER_LIB] [debug] fused_kernel_0x3BC6BF3C (guid histogram): cos_fwd_f32(1), mult_fwd_f32(2), 
+[2025-02-23 01:37:43.121] [FUSER_LIB] [debug] graph pattern: fused_kernel_0x4D6A5A48 mult_fwd_f32(t,neg_fwd_f32(sin_fwd_f32(t)))
+[2025-02-23 01:37:43.121] [FUSER_LIB] [debug] mult_fwd_f32(t,neg_fwd_f32(sin_fwd_f32(t)))
+[2025-02-23 01:37:43.121] [FUSER_LIB] [debug] fused_kernel_0x4D6A5A48 (guid histogram): mult_fwd_f32(1), neg_fwd_f32(1), sin_fwd_f32(1), 
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug] insufficient ELF buffer, given 0 required12500
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug] ELF size 12500
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug] HabanaKernelParams: {
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   guid: fused_kernel_0x4D6A5A48_2_f32, device: 3, version: 1, params: N/A, debug_flags: 0x00000000,
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   input_tensors: [
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null },
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null }
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   ],
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   output_tensors: [
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null }
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   ]
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug] }
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug] HabanaKernelInstantiation: {
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   index_space: [4, 2],
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   input_tensors: {
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]       flags: [fully_accessed_once] },
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]       flags: [fully_accessed_once] }
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   },
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   output_tensors: {
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]  }
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   },
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   elf: { buffer: 0x000055d8e5c26000, size: 12500 }
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug] }
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug] insufficient ELF buffer, given 0 required12212
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug] ELF size 12212
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug] HabanaKernelParams: {
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   guid: fused_kernel_0x3BC6BF3C_3_f32, device: 3, version: 1, params: N/A, debug_flags: 0x00000000,
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   input_tensors: [
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null },
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]     { shape: 1xf32, permutation: [0], quantization: (1, 0), flags: [reducible], layout: [0], buffer: null },
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null }
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   ],
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   output_tensors: [
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null }
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   ]
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug] }
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug] HabanaKernelInstantiation: {
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   index_space: [4, 2],
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   input_tensors: {
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]       flags: [fully_accessed_once] },
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]     { dim = 0,	a = 0,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]       flags: [fully_accessed_once] },
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]       flags: [fully_accessed_once] }
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   },
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   output_tensors: {
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]  }
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   },
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   elf: { buffer: 0x000055d8e6c60000, size: 12212 }
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug] }
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug] insufficient ELF buffer, given 0 required12500
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug] ELF size 12500
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug] HabanaKernelParams: {
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   guid: fused_kernel_0x4D6A5A48_2_f32, device: 3, version: 1, params: N/A, debug_flags: 0x00000000,
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   input_tensors: [
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null },
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null }
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   ],
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   output_tensors: [
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null }
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   ]
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug] }
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug] HabanaKernelInstantiation: {
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   index_space: [4, 2],
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   input_tensors: {
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]       flags: [fully_accessed_once] },
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]       flags: [fully_accessed_once] }
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   },
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]   output_tensors: {
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:43.123] [FUSER_LIB] [debug]  }
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]   },
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]   elf: { buffer: 0x000055d8e5c26000, size: 12500 }
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug] }
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug] insufficient ELF buffer, given 0 required12212
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug] ELF size 12212
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug] HabanaKernelParams: {
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]   guid: fused_kernel_0x3BC6BF3C_3_f32, device: 3, version: 1, params: N/A, debug_flags: 0x00000000,
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]   input_tensors: [
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null },
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]     { shape: 1xf32, permutation: [0], quantization: (1, 0), flags: [reducible], layout: [0], buffer: null },
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null }
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]   ],
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]   output_tensors: [
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]     { shape: 1000x2xf32, permutation: [0, 1], quantization: (1, 0), flags: [reducible], layout: [0, 0], buffer: null }
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]   ]
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug] }
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug] HabanaKernelInstantiation: {
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]   index_space: [4, 2],
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]   input_tensors: {
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]       flags: [fully_accessed_once] },
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]     { dim = 0,	a = 0,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]       flags: [fully_accessed_once] },
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]       flags: [fully_accessed_once] }
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]   },
+[2025-02-23 01:37:43.124] [FUSER_LIB] [debug]   output_tensors: {
+[2025-02-23 01:37:43.125] [FUSER_LIB] [debug]     { dim = 0,	a = 256,	start_b = 0,	end_b = 255
+[2025-02-23 01:37:43.125] [FUSER_LIB] [debug]       dim = 1,	a = 1,	start_b = 0,	end_b = 0
+[2025-02-23 01:37:43.125] [FUSER_LIB] [debug]  }
+[2025-02-23 01:37:43.125] [FUSER_LIB] [debug]   },
+[2025-02-23 01:37:43.125] [FUSER_LIB] [debug]   elf: { buffer: 0x000055d8e6c60000, size: 12212 }
+[2025-02-23 01:37:43.125] [FUSER_LIB] [debug] }

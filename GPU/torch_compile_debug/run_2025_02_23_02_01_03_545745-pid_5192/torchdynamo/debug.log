@@ -1,0 +1,133 @@
+Step 1: torchdynamo start tracing forward /workspaces/main_torch_compile.py:73
+TRACE starts_line /workspaces/main_torch_compile.py:73 in forward (TrigModel.forward)
+        def forward(self, x):
+TRACE RESUME 0 []
+TRACE starts_line /workspaces/main_torch_compile.py:74 in forward (TrigModel.forward)
+            return 2*torch.sin(self.linear(x)) + torch.cos(self.linear(x))
+TRACE LOAD_CONST 2 []
+TRACE LOAD_GLOBAL torch [ConstantVariable()]
+TRACE LOAD_ATTR sin [ConstantVariable(), NullVariable(), PythonModuleVariable(<module 'torch' from '/usr/local/lib/python3.12/dist-packages/torch/__init__.py'>)]
+TRACE LOAD_FAST self [ConstantVariable(), NullVariable(), TorchInGraphFunctionVariable(<built-in method sin of type object at 0x7d3a45f84480>)]
+TRACE LOAD_ATTR linear [ConstantVariable(), NullVariable(), TorchInGraphFunctionVariable(<built-in method sin of type object at 0x7d3a45f84480>), LazyVariableTracker()]
+TRACE LOAD_FAST x [ConstantVariable(), NullVariable(), TorchInGraphFunctionVariable(<built-in method sin of type object at 0x7d3a45f84480>), NullVariable(), LazyVariableTracker()]
+TRACE CALL 1 [ConstantVariable(), NullVariable(), TorchInGraphFunctionVariable(<built-in method sin of type object at 0x7d3a45f84480>), NullVariable(), LazyVariableTracker(), LazyVariableTracker()]
+TRACE inlined call forward from /workspaces/main_torch_compile.py:74 in forward (TrigModel.forward)
+        return 2*torch.sin(self.linear(x)) + torch.cos(self.linear(x))
+                           ~~~~~~~~~~~^^^
+INLINING <code object forward at 0x7d3a4c4bdb30, file "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/linear.py", line 124>
+124           0 RESUME                   0
+
+125           2 LOAD_GLOBAL              1 (NULL + F)
+             12 LOAD_ATTR                2 (linear)
+             32 LOAD_FAST                1 (input)
+             34 LOAD_FAST                0 (self)
+             36 LOAD_ATTR                4 (weight)
+             56 LOAD_FAST                0 (self)
+             58 LOAD_ATTR                6 (bias)
+             78 CALL                     3
+             86 RETURN_VALUE
+, inlined according trace_rules.lookup MOD_INLINELIST
+TRACE starts_line /usr/local/lib/python3.12/dist-packages/torch/nn/modules/linear.py:124 in forward (Linear.forward) (inline depth: 1)
+        def forward(self, input: Tensor) -> Tensor:
+TRACE RESUME 0 []
+TRACE starts_line /usr/local/lib/python3.12/dist-packages/torch/nn/modules/linear.py:125 in forward (Linear.forward) (inline depth: 1)
+            return F.linear(input, self.weight, self.bias)
+TRACE LOAD_GLOBAL F []
+TRACE LOAD_ATTR linear [NullVariable(), PythonModuleVariable(<module 'torch.nn.functional' from '/usr/local/lib/python3.12/dist-packages/torch/nn/functional.py'>)]
+TRACE LOAD_FAST input [NullVariable(), TorchInGraphFunctionVariable(<built-in function linear>)]
+TRACE LOAD_FAST self [NullVariable(), TorchInGraphFunctionVariable(<built-in function linear>), LazyVariableTracker()]
+TRACE LOAD_ATTR weight [NullVariable(), TorchInGraphFunctionVariable(<built-in function linear>), LazyVariableTracker(), UnspecializedBuiltinNNModuleVariable(Linear)]
+create_graph_input L_self_modules_linear_parameters_weight_ L['self']._modules['linear']._parameters['weight']
+wrap_to_fake L['self']._modules['linear']._parameters['weight'] (1, 1) StatefulSymbolicContext(dynamic_sizes=[<DimDynamic.STATIC: 2>, <DimDynamic.STATIC: 2>], dynamic_strides=[<DimDynamic.INFER_STRIDE: 4>, <DimDynamic.INFER_STRIDE: 4>], constraint_sizes=[None, None], constraint_strides=[None, None], view_base_context=None, tensor_source=GetItemSource(base=UnspecializedBuiltinNNModuleSource(base=UnspecializedParamBufferSource(base=GetItemSource(base=UnspecializedNNModuleSource(base=AttrSource(base=LocalSource(local_name='self', cell_or_freevar=False), member='_modules')), index='linear', index_is_slice=False), member='_parameters')), index='weight', index_is_slice=False), shape_env_to_source_to_symbol_cache={}) <class 'torch.nn.parameter.Parameter'>
+TRACE LOAD_FAST self [NullVariable(), TorchInGraphFunctionVariable(<built-in function linear>), LazyVariableTracker(), LazyVariableTracker()]
+TRACE LOAD_ATTR bias [NullVariable(), TorchInGraphFunctionVariable(<built-in function linear>), LazyVariableTracker(), LazyVariableTracker(), UnspecializedBuiltinNNModuleVariable(Linear)]
+create_graph_input L_self_modules_linear_parameters_bias_ L['self']._modules['linear']._parameters['bias']
+wrap_to_fake L['self']._modules['linear']._parameters['bias'] (1,) StatefulSymbolicContext(dynamic_sizes=[<DimDynamic.STATIC: 2>], dynamic_strides=[<DimDynamic.INFER_STRIDE: 4>], constraint_sizes=[None], constraint_strides=[None], view_base_context=None, tensor_source=GetItemSource(base=UnspecializedBuiltinNNModuleSource(base=UnspecializedParamBufferSource(base=GetItemSource(base=UnspecializedNNModuleSource(base=AttrSource(base=LocalSource(local_name='self', cell_or_freevar=False), member='_modules')), index='linear', index_is_slice=False), member='_parameters')), index='bias', index_is_slice=False), shape_env_to_source_to_symbol_cache={}) <class 'torch.nn.parameter.Parameter'>
+TRACE CALL 3 [NullVariable(), TorchInGraphFunctionVariable(<built-in function linear>), LazyVariableTracker(), LazyVariableTracker(), LazyVariableTracker()]
+create_graph_input L_x_ L['x']
+wrap_to_fake L['x'] (2000, 1) StatefulSymbolicContext(dynamic_sizes=[<DimDynamic.STATIC: 2>, <DimDynamic.STATIC: 2>], dynamic_strides=[<DimDynamic.INFER_STRIDE: 4>, <DimDynamic.INFER_STRIDE: 4>], constraint_sizes=[None, None], constraint_strides=[None, None], view_base_context=None, tensor_source=LocalSource(local_name='x', cell_or_freevar=False), shape_env_to_source_to_symbol_cache={}) <class 'torch.Tensor'>
+TRACE FX call linear from /usr/local/lib/python3.12/dist-packages/torch/nn/modules/linear.py:125 in forward (Linear.forward) (inline depth: 1)
+        return F.linear(input, self.weight, self.bias)
+               ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TRACE RETURN_VALUE None [TensorVariable()]
+DONE INLINING <code object forward at 0x7d3a4c4bdb30, file "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/linear.py", line 124>
+TRACE CALL 1 [ConstantVariable(), NullVariable(), TorchInGraphFunctionVariable(<built-in method sin of type object at 0x7d3a45f84480>), TensorVariable()]
+TRACE FX call sin from /workspaces/main_torch_compile.py:74 in forward (TrigModel.forward)
+        return 2*torch.sin(self.linear(x)) + torch.cos(self.linear(x))
+                 ~~~~~~~~~^^^^^^^^^^^^^^^^
+TRACE BINARY_OP 5 [ConstantVariable(), TensorVariable()]
+TRACE FX call mul from /workspaces/main_torch_compile.py:74 in forward (TrigModel.forward)
+        return 2*torch.sin(self.linear(x)) + torch.cos(self.linear(x))
+               ~^^~~~~~~~~~~~~~~~~~~~~~~~~
+TRACE LOAD_GLOBAL torch [TensorVariable()]
+TRACE LOAD_ATTR cos [TensorVariable(), NullVariable(), PythonModuleVariable(<module 'torch' from '/usr/local/lib/python3.12/dist-packages/torch/__init__.py'>)]
+TRACE LOAD_FAST self [TensorVariable(), NullVariable(), TorchInGraphFunctionVariable(<built-in method cos of type object at 0x7d3a45f84480>)]
+TRACE LOAD_ATTR linear [TensorVariable(), NullVariable(), TorchInGraphFunctionVariable(<built-in method cos of type object at 0x7d3a45f84480>), UnspecializedNNModuleVariable(TrigModel)]
+TRACE LOAD_FAST x [TensorVariable(), NullVariable(), TorchInGraphFunctionVariable(<built-in method cos of type object at 0x7d3a45f84480>), NullVariable(), LazyVariableTracker()]
+TRACE CALL 1 [TensorVariable(), NullVariable(), TorchInGraphFunctionVariable(<built-in method cos of type object at 0x7d3a45f84480>), NullVariable(), LazyVariableTracker(), TensorVariable()]
+TRACE inlined call forward from /workspaces/main_torch_compile.py:74 in forward (TrigModel.forward)
+        return 2*torch.sin(self.linear(x)) + torch.cos(self.linear(x))
+                                                       ~~~~~~~~~~~^^^
+INLINING <code object forward at 0x7d3a4c4bdb30, file "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/linear.py", line 124>
+124           0 RESUME                   0
+
+125           2 LOAD_GLOBAL              1 (NULL + F)
+             12 LOAD_ATTR                2 (linear)
+             32 LOAD_FAST                1 (input)
+             34 LOAD_FAST                0 (self)
+             36 LOAD_ATTR                4 (weight)
+             56 LOAD_FAST                0 (self)
+             58 LOAD_ATTR                6 (bias)
+             78 CALL                     3
+             86 RETURN_VALUE
+, inlined according trace_rules.lookup MOD_INLINELIST
+TRACE starts_line /usr/local/lib/python3.12/dist-packages/torch/nn/modules/linear.py:124 in forward (Linear.forward) (inline depth: 1)
+        def forward(self, input: Tensor) -> Tensor:
+TRACE RESUME 0 []
+TRACE starts_line /usr/local/lib/python3.12/dist-packages/torch/nn/modules/linear.py:125 in forward (Linear.forward) (inline depth: 1)
+            return F.linear(input, self.weight, self.bias)
+TRACE LOAD_GLOBAL F []
+TRACE LOAD_ATTR linear [NullVariable(), PythonModuleVariable(<module 'torch.nn.functional' from '/usr/local/lib/python3.12/dist-packages/torch/nn/functional.py'>)]
+TRACE LOAD_FAST input [NullVariable(), TorchInGraphFunctionVariable(<built-in function linear>)]
+TRACE LOAD_FAST self [NullVariable(), TorchInGraphFunctionVariable(<built-in function linear>), TensorVariable()]
+TRACE LOAD_ATTR weight [NullVariable(), TorchInGraphFunctionVariable(<built-in function linear>), TensorVariable(), UnspecializedBuiltinNNModuleVariable(Linear)]
+TRACE LOAD_FAST self [NullVariable(), TorchInGraphFunctionVariable(<built-in function linear>), TensorVariable(), LazyVariableTracker()]
+TRACE LOAD_ATTR bias [NullVariable(), TorchInGraphFunctionVariable(<built-in function linear>), TensorVariable(), LazyVariableTracker(), UnspecializedBuiltinNNModuleVariable(Linear)]
+TRACE CALL 3 [NullVariable(), TorchInGraphFunctionVariable(<built-in function linear>), TensorVariable(), LazyVariableTracker(), LazyVariableTracker()]
+TRACE FX call linear_1 from /usr/local/lib/python3.12/dist-packages/torch/nn/modules/linear.py:125 in forward (Linear.forward) (inline depth: 1)
+        return F.linear(input, self.weight, self.bias)
+               ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TRACE RETURN_VALUE None [TensorVariable()]
+DONE INLINING <code object forward at 0x7d3a4c4bdb30, file "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/linear.py", line 124>
+TRACE CALL 1 [TensorVariable(), NullVariable(), TorchInGraphFunctionVariable(<built-in method cos of type object at 0x7d3a45f84480>), TensorVariable()]
+TRACE FX call cos from /workspaces/main_torch_compile.py:74 in forward (TrigModel.forward)
+        return 2*torch.sin(self.linear(x)) + torch.cos(self.linear(x))
+                                             ~~~~~~~~~^^^^^^^^^^^^^^^^
+TRACE BINARY_OP 0 [TensorVariable(), TensorVariable()]
+TRACE FX call add from /workspaces/main_torch_compile.py:74 in forward (TrigModel.forward)
+        return 2*torch.sin(self.linear(x)) + torch.cos(self.linear(x))
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRACE RETURN_VALUE None [TensorVariable()]
+Step 1: torchdynamo done tracing forward (RETURN_VALUE)
+RETURN_VALUE triggered compile
+COMPILING GRAPH due to GraphCompileReason(reason='return_value', user_stack=[<FrameSummary file /workspaces/main_torch_compile.py, line 74 in forward>], graph_break=False)
+TRACED GRAPH
+ ===== __compiled_fn_1 =====
+ /usr/local/lib/python3.12/dist-packages/torch/fx/_lazy_graph_module.py class GraphModule(torch.nn.Module):
+    def forward(self, L_self_modules_linear_parameters_weight_: "[31mf32[0m[34m[1, 1][0m[2m[34m[1, 1][0m[2m[32mcuda:0[0m", L_self_modules_linear_parameters_bias_: "[31mf32[0m[34m[1][0m[2m[34m[1][0m[2m[32mcuda:0[0m", L_x_: "[31mf32[0m[34m[2000, 1][0m[2m[34m[1, 1][0m[2m[32mcuda:0[0m"):
+        l_self_modules_linear_parameters_weight_ = L_self_modules_linear_parameters_weight_
+        l_self_modules_linear_parameters_bias_ = L_self_modules_linear_parameters_bias_
+        l_x_ = L_x_
+        
+         [2m# File: /workspaces/main_torch_compile.py:74 in forward, code: return 2*torch.sin(self.linear(x)) + torch.cos(self.linear(x))[0m
+        linear: "[31mf32[0m[34m[2000, 1][0m[2m[34m[1, 1][0m[2m[32mcuda:0[0m" = torch._C._nn.linear(l_x_, l_self_modules_linear_parameters_weight_, l_self_modules_linear_parameters_bias_)
+        sin: "[31mf32[0m[34m[2000, 1][0m[2m[34m[1, 1][0m[2m[32mcuda:0[0m" = torch.sin(linear);  [2mlinear = None[0m
+        mul: "[31mf32[0m[34m[2000, 1][0m[2m[34m[1, 1][0m[2m[32mcuda:0[0m" = [34m2[0m * sin;  [2msin = None[0m
+        linear_1: "[31mf32[0m[34m[2000, 1][0m[2m[34m[1, 1][0m[2m[32mcuda:0[0m" = torch._C._nn.linear(l_x_, l_self_modules_linear_parameters_weight_, l_self_modules_linear_parameters_bias_);  [2ml_x_ = l_self_modules_linear_parameters_weight_ = l_self_modules_linear_parameters_bias_ = None[0m
+        cos: "[31mf32[0m[34m[2000, 1][0m[2m[34m[1, 1][0m[2m[32mcuda:0[0m" = torch.cos(linear_1);  [2mlinear_1 = None[0m
+        add: "[31mf32[0m[34m[2000, 1][0m[2m[34m[1, 1][0m[2m[32mcuda:0[0m" = mul + cos;  [2mmul = cos = None[0m
+        return (add,)
+        
+
+Step 2: calling compiler function inductor
+Step 2: done compiler function inductor

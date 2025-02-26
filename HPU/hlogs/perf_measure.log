@@ -1,0 +1,146 @@
+[01:37:55.575606][PERF][info ][tid:7D6D] synLaunch Total time(ns)                   |sum               0|count        0|average               0   -----  Global Disabled
+[01:37:55.575608][PERF][info ][tid:7D6D] seqId                                      |sum               0|count        0|average               0
+[01:37:55.575609][PERF][info ][tid:7D6D] recipeId                                   |sum               0|count        0|average               0
+[01:37:55.575610][PERF][info ][tid:7D6D] successfulRuns                             |sum               0|count        0|average               0
+[01:37:55.575611][PERF][info ][tid:7D6D] LaunchSubmit                               |sum               0|count        0|average               0
+[01:37:55.575612][PERF][info ][tid:7D6D] memcpyAsyncLaunch                          |sum               0|count        0|average               0
+[01:37:55.575613][PERF][info ][tid:7D6D] memcpyAsyncLaunchSubmit                    |sum               0|count        0|average               0
+[01:37:55.575614][PERF][info ][tid:7D6D] StreamWaitLaunchSubmit                     |sum               0|count        0|average               0
+[01:37:55.575615][PERF][info ][tid:7D6D] EventRecordLaunchSubmit                    |sum               0|count        0|average               0
+[01:37:55.575616][PERF][info ][tid:7D6D] memcpyAsyncUser                            |sum               0|count        0|average               0
+[01:37:55.575617][PERF][info ][tid:7D6D] memcpyAsyncUserSubmit                      |sum               0|count        0|average               0
+[01:37:55.575618][PERF][info ][tid:7D6D] StreamWaitUser                             |sum               0|count        0|average               0
+[01:37:55.575619][PERF][info ][tid:7D6D] StreamWaitUserSubmit                       |sum               0|count        0|average               0
+[01:37:55.575620][PERF][info ][tid:7D6D] EventRecordUser                            |sum               0|count        0|average               0
+[01:37:55.575621][PERF][info ][tid:7D6D] EventRecordUserSubmit                      |sum               0|count        0|average               0
+[01:37:55.575622][PERF][info ][tid:7D6D] waitForCs launch (ns)                      |sum               0|count        0|average               0
+[01:37:55.575623][PERF][info ][tid:7D6D] Driver CS queue full                       |sum               0|count        0|average               0
+[01:37:55.575625][PERF][info ][tid:7D6D] Device prepare launch (ns)                 |sum               0|count        0|average               0
+[01:37:55.575626][PERF][info ][tid:7D6D] DeviceMutexDuration (ns)                   |sum               0|count        0|average               0
+[01:37:55.575627][PERF][info ][tid:7D6D] recipe Init (ns)                           |sum               0|count        0|average               0
+[01:37:55.575628][PERF][info ][tid:7D6D] csdcStreamCopyAllocate                     |sum               0|count        0|average               0
+[01:37:55.575629][PERF][info ][tid:7D6D] csdcStreamCopyRelease                      |sum               0|count        0|average               0
+[01:37:55.575630][PERF][info ][tid:7D6D] csdcStreamComputeAllocate                  |sum               0|count        0|average               0
+[01:37:55.575631][PERF][info ][tid:7D6D] csdcStreamComputeRelease                   |sum               0|count        0|average               0
+[01:37:55.575632][PERF][info ][tid:7D6D] DataChunksCacheAlloc                       |sum               0|count        0|average               0
+[01:37:55.575633][PERF][info ][tid:7D6D] DataChunksCacheCreated                     |sum               0|count        0|average               0
+[01:37:55.575634][PERF][info ][tid:7D6D] DataChunksCacheRelease                     |sum               0|count        0|average               0
+[01:37:55.575635][PERF][info ][tid:7D6D] DataChunksCacheDestruct                    |sum               0|count        0|average               0
+[01:37:55.575637][PERF][info ][tid:7D6D] UsedDataChunks                             |sum               0|count        0|average               0
+[01:37:55.575638][PERF][info ][tid:7D6D] FreeChunks                                 |sum               0|count        0|average               0
+[01:37:55.575639][PERF][info ][tid:7D6D] csdcDbSize                                 |sum               0|count        0|average               0
+[01:37:55.575640][PERF][info ][tid:7D6D] TensorsAnalyze(ns)                         |sum               0|count        0|average               0
+[01:37:55.575641][PERF][info ][tid:7D6D] tensorsValidate(ns)                        |sum               0|count        0|average               0
+[01:37:55.575642][PERF][info ][tid:7D6D] Patching time(ns)                          |sum               0|count        0|average               0
+[01:37:55.575643][PERF][info ][tid:7D6D] csdcFullReuse                              |sum               0|count        0|average               0
+[01:37:55.575644][PERF][info ][tid:7D6D] csdcPartialReuse                           |sum               0|count        0|average               0
+[01:37:55.575645][PERF][info ][tid:7D6D] query (ns)                                 |sum               0|count        0|average               0
+[01:37:55.575646][PERF][info ][tid:7D6D] inFlightLaunchReqStart                     |sum               0|count        0|average               0
+[01:37:55.575647][PERF][info ][tid:7D6D] inFlightLaunchReqLeft                      |sum               0|count        0|average               0
+[01:37:55.575648][PERF][info ][tid:7D6D] patchDynamicRecipe (ns)                    |sum               0|count        0|average               0
+[01:37:55.575649][PERF][info ][tid:7D6D] downloadProgramDataToDev(ns)               |sum               0|count        0|average               0
+[01:37:55.575650][PERF][info ][tid:7D6D] downloadPrgCode (ns)                       |sum               0|count        0|average               0
+[01:37:55.575651][PERF][info ][tid:7D6D] staticBlobsCache (ns)                      |sum               0|count        0|average               0
+[01:37:55.575652][PERF][info ][tid:7D6D] dataCache (ns)                             |sum               0|count        0|average               0
+[01:37:55.575653][PERF][info ][tid:7D6D] patchableCache (ns)                        |sum               0|count        0|average               0
+[01:37:55.575654][PERF][info ][tid:7D6D] streamDbMutexDuration (ns)                 |sum               0|count        0|average               0
+[01:37:55.575655][PERF][info ][tid:7D6D] streamCopyMemCopyDuration(ns)              |sum               0|count        0|average               0
+[01:37:55.575657][PERF][info ][tid:7D6D] streamCopyMutexDuration (ns)               |sum               0|count        0|average               0
+[01:37:55.575658][PERF][info ][tid:7D6D] streamCopyOperationDuration(ns)            |sum               0|count        0|average               0
+[01:37:55.575659][PERF][info ][tid:7D6D] streamCopyRetrieveCsDc (ns)                |sum               0|count        0|average               0
+[01:37:55.575660][PERF][info ][tid:7D6D] streamCopySubmit (ns)                      |sum               0|count        0|average               0
+[01:37:55.575661][PERF][info ][tid:7D6D] streamCopySubmitPrepare (ns)               |sum               0|count        0|average               0
+[01:37:55.575662][PERF][info ][tid:7D6D] streamCopySubmitExecute (ns)               |sum               0|count        0|average               0
+[01:37:55.575664][PERF][info ][tid:7D6D] wcmObserverDbMutexDuration(ns)             |sum               0|count        0|average               0
+[01:37:55.575665][PERF][info ][tid:7D6D] wcmObserverWaitDuration(ns)                |sum               0|count        0|average               0
+[01:37:55.575666][PERF][info ][tid:7D6D] wcmAddDuration(ns)                         |sum               0|count        0|average               0
+[01:37:55.575667][PERF][info ][tid:7D6D] wcmQueryDurationFail(ns)                   |sum               0|count        0|average               0
+[01:37:55.575668][PERF][info ][tid:7D6D] wcmQueryDurationTimeout(ns)                |sum               0|count        0|average               0
+[01:37:55.575669][PERF][info ][tid:7D6D] wcmQueryDurationComplete(ns)               |sum               0|count        0|average               0
+[01:37:55.575671][PERF][info ][tid:7D6D] dipGetCommandsBufferDataChunks (ns)        |sum               0|count        0|average               0
+[01:37:55.575672][PERF][info ][tid:7D6D] dipRecipeActivate (ns)                     |sum               0|count        0|average               0
+[01:37:55.575673][PERF][info ][tid:7D6D] dipRecipeEnqueue (ns)                      |sum               0|count        0|average               0
+[01:37:55.575674][PERF][info ][tid:7D6D] dipAnalyzeNewTensors (ns)                  |sum               0|count        0|average               0
+[01:37:55.575676][PERF][info ][tid:7D6D] dipSendCommandSubmission(ns)               |sum               0|count        0|average               0
+[01:37:55.575677][PERF][info ][tid:7D6D] dipCopyPrgToDc (ns)                        |sum               0|count        0|average               0
+[01:37:55.575678][PERF][info ][tid:7D6D] dipCopyPatchableBlobs (ns)                 |sum               0|count        0|average               0
+[01:37:55.575679][PERF][info ][tid:7D6D] queueComputeLaunch (ns)                    |sum               0|count        0|average               0
+[01:37:55.575680][PERF][info ][tid:7D6D] queueComputeMutexDuration (ns)             |sum               0|count        0|average               0
+[01:37:55.575681][PERF][info ][tid:7D6D] queueComputeSync (ns)                      |sum               0|count        0|average               0
+[01:37:55.575682][PERF][info ][tid:7D6D] queueComputeActivate (ns)                  |sum               0|count        0|average               0
+[01:37:55.575683][PERF][info ][tid:7D6D] queueComputeEnqueueAndSync (ns)            |sum               0|count        0|average               0
+[01:37:55.575685][PERF][info ][tid:7D6D] queueComputeEnqueue (ns)                   |sum               0|count        0|average               0
+[01:37:55.575686][PERF][info ][tid:7D6D] queueComputeEnqueueUpdatePostExecution (ns)|sum               0|count        0|average               0
+[01:37:55.575687][PERF][info ][tid:7D6D] queueComputeReserve (ns)                   |sum               0|count        0|average               0
+[01:37:55.575688][PERF][info ][tid:7D6D] queueComputeUnreserve (ns)                 |sum               0|count        0|average               0
+[01:37:55.575690][PERF][info ][tid:7D6D] queueComputeEventManipulation (ns)         |sum               0|count        0|average               0
+[01:37:55.575691][PERF][info ][tid:7D6D] queueComputeRetrieveCsDc(ns)               |sum               0|count        0|average               0
+[01:37:55.575692][PERF][info ][tid:7D6D] queueComputeRetrieveCsDcRelease(ns)        |sum               0|count        0|average               0
+[01:37:55.575694][PERF][info ][tid:7D6D] queueComputeRetrieveCsDcAcquire(ns)        |sum               0|count        0|average               0
+[01:37:55.575695][PERF][info ][tid:7D6D] queueComputeRetrieveCsDcWcm(ns)            |sum               0|count        0|average               0
+[01:37:55.575696][PERF][info ][tid:7D6D] queueComputePartialReuse                   |sum               0|count        0|average               0
+[01:37:55.575697][PERF][info ][tid:7D6D] StreamLockEventWaitDuration                |sum               0|count        0|average               0
+[01:37:55.575698][PERF][info ][tid:7D6D] StreamLockExistingJobWaitingDurati  on     |sum               0|count        0|average               0
+[01:37:55.575700][PERF][info ][tid:7D6D] StreamLockAffinityDuration                 |sum               0|count        0|average               0
+[01:37:55.575701][PERF][info ][tid:7D6D] StreamLockBusyDuration                     |sum               0|count        0|average               0
+[01:37:55.575701][PERF][info ][tid:7D6D] StreamAddJob                               |sum               0|count        0|average               0
+[01:37:55.575703][PERF][info ][tid:7D6D] StreamSynchronize                          |sum               0|count        0|average               0
+[01:37:55.575704][PERF][info ][tid:7D6D] StreamQuery                                |sum               0|count        0|average               0
+[01:37:55.575705][PERF][info ][tid:7D6D] createStaticCPdma (ns)                     |sum               0|count        0|average               0
+[01:37:55.575707][PERF][info ][tid:7D6D] calcDcNum (ns)                             |sum               0|count        0|average               0
+[01:37:55.575708][PERF][info ][tid:7D6D] calcBlobDeviceAddr (ns)                    |sum               0|count        0|average               0
+[01:37:55.575709][PERF][info ][tid:7D6D] downloadProgramCodeBlobs (ns)              |sum               0|count        0|average               0
+[01:37:55.575710][PERF][info ][tid:7D6D] waitForSyncSynDmaDown (ns)                 |sum               0|count        0|average               0
+[01:37:55.575711][PERF][info ][tid:7D6D] dcSizeCpDma                                |sum               0|count        0|average               0
+[01:37:55.575712][PERF][info ][tid:7D6D] dcAmountCpDmaCached                        |sum               0|count        0|average               0
+[01:37:55.575713][PERF][info ][tid:7D6D] dcAmountCpDmaNotCached                     |sum               0|count        0|average               0
+[01:37:55.575714][PERF][info ][tid:7D6D] maxProgramDcSizeCached                     |sum               0|count        0|average               0
+[01:37:55.575716][PERF][info ][tid:7D6D] maxProgramDcSizeNotCached                  |sum               0|count        0|average               0
+[01:37:55.575717][PERF][info ][tid:7D6D] maxProgramWcDcSizeCached                   |sum               0|count        0|average               0
+[01:37:55.575718][PERF][info ][tid:7D6D] maxProgramWcDcSizeNotCached                |sum               0|count        0|average               0
+[01:37:55.575719][PERF][info ][tid:7D6D] avgProgramDcSizeCached                     |sum               0|count        0|average               0
+[01:37:55.575720][PERF][info ][tid:7D6D] avgProgramDcSizeNotCached                  |sum               0|count        0|average               0
+[01:37:55.575721][PERF][info ][tid:7D6D] avgProgramWcDcSizeCached                   |sum               0|count        0|average               0
+[01:37:55.575722][PERF][info ][tid:7D6D] avgProgramWcDcSizeNotCached                |sum               0|count        0|average               0
+[01:37:55.575723][PERF][info ][tid:7D6D] dcSizeCommand                              |sum               0|count        0|average               0
+[01:37:55.575724][PERF][info ][tid:7D6D] dcAmountCommand                            |sum               0|count        0|average               0
+[01:37:55.575725][PERF][info ][tid:7D6D] accumulateBlobsChunksSize                  |sum               0|count        0|average               0
+[01:37:55.575726][PERF][info ][tid:7D6D] RCnonPatchableAlreadyIn                    |sum               0|count        0|average               0
+[01:37:55.575727][PERF][info ][tid:7D6D] RCprgDataAlreadyIn                         |sum               0|count        0|average               0
+[01:37:55.575728][PERF][info ][tid:7D6D] RCrecipeCacheNoMemory                      |sum               0|count        0|average               0
+[01:37:55.575729][PERF][info ][tid:7D6D] RCallocatedNonPatchable                    |sum               0|count        0|average               0
+[01:37:55.575729][PERF][info ][tid:7D6D] RCallocatedPrgData                         |sum               0|count        0|average               0
+[01:37:55.575730][PERF][info ][tid:7D6D] RCRecipeCacheFreeMemory                    |sum               0|count        0|average               0
+[01:37:55.575730][PERF][info ][tid:7D6D] RCNoMemoryAfterFree                        |sum               0|count        0|average               0
+[01:37:55.575731][PERF][info ][tid:7D6D] RCUniqueReUse                              |sum               0|count        0|average               0
+[01:37:55.575731][PERF][info ][tid:7D6D] initDynamicRecipe (ns)                     |sum               0|count        0|average               0
+[01:37:55.575732][PERF][info ][tid:7D6D] DsdPatchDynamicRecipe (ns)                 |sum               0|count        0|average               0
+[01:37:55.575733][PERF][info ][tid:7D6D] DsdShapeTensors                            |sum               0|count        0|average               0
+[01:37:55.575733][PERF][info ][tid:7D6D] DsdPP                                      |sum               0|count        0|average               0
+[01:37:55.575735][PERF][info ][tid:7D6D] DsdBypass (bypass=true)                    |sum               0|count        0|average               0
+[01:37:55.575735][PERF][info ][tid:7D6D] DsdSkipPP (skipped rois)                   |sum               0|count        0|average               0
+[01:37:55.575736][PERF][info ][tid:7D6D] DsdInitRecipe (phase) (ns)                 |sum               0|count        0|average               0
+[01:37:55.575736][PERF][info ][tid:7D6D] DsdInitTensors (phase) (ns)                |sum               0|count        0|average               0
+[01:37:55.575737][PERF][info ][tid:7D6D] DsdSif (SIF phase)                         |sum               0|count        0|average               0
+[01:37:55.575737][PERF][info ][tid:7D6D] DsdSmf (SMF phase)                         |sum               0|count        0|average               0
+[01:37:55.575738][PERF][info ][tid:7D6D] DsdSVerifyOut (verify phase)               |sum               0|count        0|average               0
+[01:37:55.575739][PERF][info ][tid:7D6D] DsdNoPatch (PP size=0)                     |sum               0|count        0|average               0
+[01:37:55.575739][PERF][info ][tid:7D6D] DsdSifTime (only sif)                      |sum               0|count        0|average               0
+[01:37:55.575740][PERF][info ][tid:7D6D] DsdSmfTime (only smf)                      |sum               0|count        0|average               0
+[01:37:55.575740][PERF][info ][tid:7D6D] scalMemcpy2Mapped (ns)                     |sum               0|count        0|average               0
+[01:37:55.575741][PERF][info ][tid:7D6D] ih2dBufferMemAlloc (ns)                    |sum               0|count        0|average               0
+[01:37:55.575741][PERF][info ][tid:7D6D] scalPdmaDownload (ns)                      |sum               0|count        0|average               0
+[01:37:55.575742][PERF][info ][tid:7D6D] scalEnqueue (ns)                           |sum               0|count        0|average               0
+[01:37:55.575742][PERF][info ][tid:7D6D] CompletionNeedResources                    |sum               0|count        0|average               0
+[01:37:55.575743][PERF][info ][tid:7D6D] scalSubmit (ns)                            |sum               0|count        0|average               0
+[01:37:55.575743][PERF][info ][tid:7D6D] scalSubmitCompute (ns)                     |sum               0|count        0|average               0
+[01:37:55.575744][PERF][info ][tid:7D6D] scalGetMapped (ns)                         |sum               0|count        0|average               0
+[01:37:55.575744][PERF][info ][tid:7D6D] scalGetHbms (ns)                           |sum               0|count        0|average               0
+[01:37:55.575745][PERF][info ][tid:7D6D] scalChkCompletion                          |sum               0|count        0|average               0
+[01:37:55.575746][PERF][info ][tid:7D6D] mappedOutBits NP/P (1/2)                   |sum               0|count        0|average               0
+[01:37:55.575746][PERF][info ][tid:7D6D] mmmCouldNotRelease                         |sum               0|count        0|average               0
+[01:37:55.575747][PERF][info ][tid:7D6D] mmmReleasedEntry                           |sum               0|count        0|average               0
+[01:37:55.575747][PERF][info ][tid:7D6D] mmmReleasedSegment                         |sum               0|count        0|average               0
+[01:37:55.575748][PERF][info ][tid:7D6D] ccbBusyTime                                |sum               0|count        0|average               0
+[01:37:55.575749][PERF][info ][tid:7D6D] scalHbmSingleBuff                          |sum               0|count        0|average               0
+[01:37:55.575749][PERF][info ][tid:7D6D] last and invalid                           |sum               0|count        0|average               0
